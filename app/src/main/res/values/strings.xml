@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Qual é o número?</string>
+    <string name="nova_partida_button">Nova partida</string>
+    <string name="inputTextHint">Digite o palpite</string>
+    <string name="btn_text">Enviar</string>
+    <string name="erro_msg">Erro</string>
+    <string name="greater_msg">É maior</string>
+    <string name="lesser_msg">É menor</string>
+    <string name="nailed">Acertou!</string>
+    <string name="input_error_text">Favor digitar um número entre 1 e 300</string>
+    <string name="input_exception">Problema no palpite</string>
+</resources>

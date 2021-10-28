@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Which is the number?</string>
+    <string name="nova_partida_button">New match</string>
+    <string name="inputTextHint">Type your guess</string>
+    <string name="btn_text">Send</string>
+    <string name="erro_msg">Error</string>
+    <string name="greater_msg">Greater</string>
+    <string name="lesser_msg">Lesser</string>
+    <string name="nailed">Nailed!</string>
+    <string name="input_error_text">Please, type a number between 1 and 300</string>
+    <string name="input_exception">Gessing problem</string>
+</resources>
