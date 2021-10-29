@@ -9,4 +9,6 @@
     <string name="nailed">Nailed!</string>
     <string name="input_error_text">Please, type a number between 1 and 300</string>
     <string name="input_exception">Gessing problem</string>
+    <string name="segment_description">led segment</string>
+    <string name="menu_title">Color menu</string>
 </resources>

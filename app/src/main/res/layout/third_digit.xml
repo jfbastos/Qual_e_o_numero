@@ -10,7 +10,8 @@
         android:layout_height="50dp"
         android:background="@drawable/segment"
         app:layout_constraintBottom_toTopOf="@id/segment_6"
-        app:layout_constraintEnd_toStartOf="@id/segment_6" />
+        app:layout_constraintEnd_toStartOf="@id/segment_6"
+        android:contentDescription="@string/segment_description" />
 
     <ImageView
         android:id="@+id/segment_1"
@@ -18,7 +19,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/segment"
         app:layout_constraintBottom_toTopOf="@id/segment_0"
-        app:layout_constraintStart_toEndOf="@id/segment_0" />
+        app:layout_constraintStart_toEndOf="@id/segment_0"
+        android:contentDescription="@string/segment_description" />
 
     <ImageView
         android:id="@+id/segment_2"
@@ -26,7 +28,8 @@
         android:layout_height="50dp"
         android:background="@drawable/segment"
         app:layout_constraintStart_toEndOf="@id/segment_1"
-        app:layout_constraintTop_toBottomOf="@id/segment_1" />
+        app:layout_constraintTop_toBottomOf="@id/segment_1"
+        android:contentDescription="@string/segment_description" />
 
     <ImageView
         android:id="@+id/segment_3"
@@ -34,7 +37,8 @@
         android:layout_height="50dp"
         android:background="@drawable/segment"
         app:layout_constraintStart_toEndOf="@id/segment_6"
-        app:layout_constraintTop_toBottomOf="@id/segment_6" />
+        app:layout_constraintTop_toBottomOf="@id/segment_6"
+        android:contentDescription="@string/segment_description" />
 
     <ImageView
         android:id="@+id/segment_4"
@@ -42,7 +46,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/segment"
         app:layout_constraintEnd_toStartOf="@id/segment_3"
-        app:layout_constraintTop_toBottomOf="@id/segment_3" />
+        app:layout_constraintTop_toBottomOf="@id/segment_3"
+        android:contentDescription="@string/segment_description" />
 
     <ImageView
         android:id="@+id/segment_5"
@@ -50,7 +55,8 @@
         android:layout_height="50dp"
         android:background="@drawable/segment"
         app:layout_constraintEnd_toStartOf="@id/segment_4"
-        app:layout_constraintBottom_toTopOf="@id/segment_4" />
+        app:layout_constraintBottom_toTopOf="@id/segment_4"
+        android:contentDescription="@string/segment_description" />
 
     <ImageView
         android:id="@+id/segment_6"
@@ -60,7 +66,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/segment_description" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

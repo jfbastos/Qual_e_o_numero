@@ -9,4 +9,6 @@
     <string name="nailed">Acertou!</string>
     <string name="input_error_text">Favor digitar um número entre 1 e 300</string>
     <string name="input_exception">Problema no palpite</string>
+    <string name="segment_description">led segment</string>
+    <string name="menu_title">Menu de cor</string>
 </resources>
