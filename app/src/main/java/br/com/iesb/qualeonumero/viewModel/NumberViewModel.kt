@@ -10,18 +10,18 @@ import kotlinx.coroutines.launch
 
 class NumberViewModel(private val repository : Repository) : ViewModel() {
 
-    private val _numerLiveData = MutableLiveData<RandomNumber>()
-    val numberLiveData : LiveData<RandomNumber> get() = _numerLiveData
+    private val _numberLiveData = MutableLiveData<RandomNumber>()
+    val numberLiveData : LiveData<RandomNumber> get() = _numberLiveData
 
     fun getNumber(){
         viewModelScope.launch {
             try{
                 val response = repository.fetchRandomNumber()
                 if(response.isSuccessful){
-                    _numerLiveData.postValue(response.body())
+                    _numberLiveData.postValue(response.body())
                     println(response.body())
                 }else{
-                    _numerLiveData.postValue(RandomNumber(response.code()))
+                    _numberLiveData.postValue(RandomNumber(response.code()))
                     println(response.code())
                 }
             }catch (e : Exception){

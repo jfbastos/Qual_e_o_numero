@@ -1,5 +1,6 @@
 package br.com.iesb.qualeonumero.view
 
+import android.graphics.PorterDuff
 import android.view.View
 import br.com.iesb.qualeonumero.R
 import br.com.iesb.qualeonumero.databinding.ActivityMainBinding
@@ -14,6 +15,7 @@ object Led {
      * Também é verificado se o digito à esquerda é 0, caso seja o digito não será apresentado.
     * */
     fun showLed(suggestion: String, binding: ActivityMainBinding) {
+
         when (suggestion.length) {
             3 -> {
                 binding.thirdDigit.root.visibility = View.VISIBLE
@@ -54,6 +56,33 @@ object Led {
         }
     }
 
+
+    /**
+     * Altera a cor de cada segmento do drawable conforme seleção do usuário.
+     * Obs: a função setColorFilter está deprecated, porém o novo recurso BlendModeColorFilter
+     * só funciona apartir do sdk 29(Android 10). Visto que o sdk minimo é o 21, para fins de
+     * compatibilidade este recurso não será utilizado.
+     * */
+
+    fun colorDigit(color : Int, digitView: View) {
+
+        val led0 = digitView.findViewById<View>(R.id.segment_0)
+        val led1 = digitView.findViewById<View>(R.id.segment_1)
+        val led2 = digitView.findViewById<View>(R.id.segment_2)
+        val led3 = digitView.findViewById<View>(R.id.segment_3)
+        val led4 = digitView.findViewById<View>(R.id.segment_4)
+        val led5 = digitView.findViewById<View>(R.id.segment_5)
+        val led6 = digitView.findViewById<View>(R.id.segment_6)
+
+        led0.background.setColorFilter(color, PorterDuff.Mode.SRC_IN)
+        led1.background.setColorFilter(color, PorterDuff.Mode.SRC_IN)
+        led2.background.setColorFilter(color, PorterDuff.Mode.SRC_IN)
+        led3.background.setColorFilter(color, PorterDuff.Mode.SRC_IN)
+        led4.background.setColorFilter(color, PorterDuff.Mode.SRC_IN)
+        led5.background.setColorFilter(color, PorterDuff.Mode.SRC_IN)
+        led6.background.setColorFilter(color, PorterDuff.Mode.SRC_IN)
+    }
+
     /**
      * Efetua o desenho do digito na tela acendendo e apagando os leds necessários para
      * representação deste.
@@ -71,7 +100,6 @@ object Led {
         val led4 = digitView.findViewById<View>(R.id.segment_4)
         val led5 = digitView.findViewById<View>(R.id.segment_5)
         val led6 = digitView.findViewById<View>(R.id.segment_6)
-
 
         when (digit) {
             "0" -> {
@@ -166,4 +194,5 @@ object Led {
             }
         }
     }
+
 }
